@@ -1,0 +1,20 @@
+*{
+    /* margin: 0; */
+    padding: 0;
+    box-sizing: border-box;
+    font: bold 2rem black;
+}
+.grid>div{
+    padding:1rem;
+    background-color: bisque;
+}
+.grid>div:nth-child(odd){
+    background-color: aqua;
+}
+.grid{
+    display:grid;
+    grid-template-rows: 2fr auto auto auto;
+    /* grid-auto-rows: minmax(100px,auto); */
+    gap:2rem;
+    justify-content: start;
+}
